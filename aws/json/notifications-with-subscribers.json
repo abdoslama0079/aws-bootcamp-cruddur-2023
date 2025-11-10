@@ -1,0 +1,30 @@
+[ 
+      { 
+         "Notification": { 
+            "ComparisonOperator": "GREATER_THAN",
+            "NotificationType": "ACTUAL",
+            "Threshold": 70,
+            "ThresholdType": "PERCENTAGE"
+         },
+         "Subscribers": [ 
+            { 
+               "Address": "exclusion-alerts@example.com",
+               "SubscriptionType": "EMAIL"
+            }
+         ]
+      },
+      { 
+         "Notification": { 
+            "ComparisonOperator": "GREATER_THAN",
+            "NotificationType": "FORECASTED",
+            "Threshold": 100,
+            "ThresholdType": "PERCENTAGE"
+         },
+         "Subscribers": [ 
+            { 
+               "Address": "exclusion-forecasts@example.com",
+               "SubscriptionType": "EMAIL"
+            }
+         ]
+      }
+   ]

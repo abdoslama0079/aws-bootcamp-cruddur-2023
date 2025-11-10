@@ -1,0 +1,25 @@
+{
+   "AccountId": "111122223333",
+   "Budget": { 
+      "BudgetLimit": { 
+         "Amount": "1000",
+         "Unit": "USD"
+      },
+      "BudgetName": "Example Exclusion Budget",
+      "BudgetType": "COST",
+      "FilterExpression": {
+         "Not": {
+            "Dimensions": {
+               "Key": "SERVICE",
+               "Values": ["AWS Shield", "AWS Support (Enterprise)"]
+            }
+         }
+      },
+      "Metrics": ["NET_UNBLENDED_COST"],
+      "TimePeriod": { 
+         "Start": 1712019600,
+         "End": 1714611600
+      },
+      "TimeUnit": "MONTHLY"
+   }
+}
